@@ -9,3 +9,43 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
+
+.carousel-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  aspect-ratio: 16/9;
+  position: relative;
+  left: 0px; /* -1536px for every image */
+}
+
+.carousel-slide img {
+  object-fit: cover;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid black;
+  opacity: 0.75;
+}
+
+.slider-nav a:active {
+    background-color: black;
+}
